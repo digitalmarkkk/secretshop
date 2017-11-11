@@ -1,0 +1,115 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fc8a25;
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: #0707bb;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+	line-height: 1.5;
+}
+
+/*configuration*/
+
+.bcolor1 { 
+	background-color: #0e0058;
+}
+
+.tcolor1 {
+	color: #0e0058;
+}
+
+.v-align-middle {
+	vertical-align: middle!important;
+}
+
+.text-align-center {
+	text-align: center;
+}
+.m-b-0 {
+	margin-bottom: 0;
+}
+
+.m-b-xs {
+	margin-bottom: 10px;
+}
+
+.m-b-1 {
+	margin-bottom: 15px;
+}
+
+.m-b-2 {
+	margin-bottom: 20px
+}
+
+.m-t-0 {
+	margin-top: 0;
+}
+
+.m-t-xs {
+	margin-top: 10px;
+}
+
+.m-t-1 {
+	margin-top: 15px;
+}
+
+.m-t-2 {
+	margin-top: 20px
+}
+
+.main-block {
+	padding: 0;
+	margin: 0;
+}
+
+.logo-main {
+	width: 100%;
+    display: block;
+    background-color: #564c89;
+    margin-top: 40px;
+}
+
+.logo-area {
+	position: relative;
+	padding: 15px;
+	display: block;
+	margin: 0 auto;
+	background-color: #0e0058;
+}
+
+.logo-area img {
+	position: relative;
+    width: 100%;
+}
+
+.login-block{
+	margin: 60px 0 20px 0;
+}
+
+.login-area {
+	display: block;
+	position: relative;
+}
+
+.login-area fieldset {
+	padding: 20px;
+}
+
+.login-area input, .login-area button {
+	margin: 0 auto 15px auto;
+	width: 250px;
+}
+
+.login-area button {
+	color: #fff;
+}
+
+.login-area button:hover {
+	background-color: #180386;
+	color: #fff;
+}
