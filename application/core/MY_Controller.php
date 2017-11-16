@@ -18,7 +18,7 @@ class MY_Controller extends CI_Controller {
 
     {
 
-        parent::__construct();
+        parent::__construct();       
 
     }
 
@@ -32,7 +32,7 @@ class MY_Controller extends CI_Controller {
 
 		// add common styles
 		$this->document->add_style(assets_url().'css/pages/bootstrap.min.css');
-		$this->document->add_style(assets_url().'css/pages/style.css');
+		$this->document->add_style(assets_url().'css/pages/style.css'.'?'.rand('200', '20000'));
 		$this->data['styles'] = $this->document->get_styles();
 		// eof common add styles		
 
@@ -72,6 +72,7 @@ class MY_Controller extends CI_Controller {
 		$this->document->add_style(assets_url().'css/admin/font-awesome.css');
 		$this->document->add_style(assets_url().'css/admin/animate.css');
 		$this->document->add_style(assets_url().'css/admin/sweetalert.css');
+		$this->document->add_style(assets_url().'css/pages/style.css'.'?'.rand('200', '20000'));
 		
 		
 		$this->data['styles'] = $this->document->get_styles();

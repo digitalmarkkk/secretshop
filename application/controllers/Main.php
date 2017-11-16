@@ -14,6 +14,14 @@ class Main extends MY_Controller {
 
 
 	public function index()	{
+
+		$user_session = user_session();
+				
+		if(count($user_session) > 0){
+			redirect('account/dashboard');
+		}
+
+		$this->document->set_title('UServ');
 		
         $data = array();
 

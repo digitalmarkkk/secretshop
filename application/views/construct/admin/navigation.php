@@ -12,10 +12,10 @@
     </div>
     <div class="navbar-item nav navbar-nav">
       <div class="nav-item nav-link dropdown">
+        <span>Login as Teller 1</span>
         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-          <i class="material-icons">notifications</i>
+          <i class="tcolor2 material-icons">notifications</i>
         </a>
-
       </div>
     </div>
   </div>

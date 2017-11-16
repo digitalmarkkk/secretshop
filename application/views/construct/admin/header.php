@@ -4,7 +4,7 @@
             <i class="material-icons">menu</i>
         </a>
         <a class="brand-logo">
-            <img class="expanding-hidden" src="<?php echo assets_url(); ?>images/logo-panel.png" alt="UServ Logo" style="max-height: 30px"/>
+            <img class="expanding-hidden" src="<?php echo assets_url(); ?>images/userv-logo-panel.png" alt="UServ Logo" style="max-height: 30px"/>
         </a>
     </div>
     <div class="nav-profile dropdown">

@@ -13,14 +13,22 @@ a:hover, a:focus {
 	line-height: 1.5;
 }
 
-/*configuration*/
+/*configuration*/ 
 
 .bcolor1 { 
-	background-color: #0e0058;
+	background-color: #0e0058 !important;
 }
 
 .tcolor1 {
-	color: #0e0058;
+	color: #0e0058 !important;
+}
+
+.bcolor2 { 
+	background-color: #f89c1c !important;
+}
+
+.tcolor2 {
+	color: #f89c1c !important;
 }
 
 .v-align-middle {
@@ -76,7 +84,7 @@ a:hover, a:focus {
 
 .logo-area {
 	position: relative;
-	padding: 15px;
+	padding: 10px;
 	display: block;
 	margin: 0 auto;
 	background-color: #0e0058;
@@ -112,4 +120,32 @@ a:hover, a:focus {
 .login-area button:hover {
 	background-color: #180386;
 	color: #fff;
+}
+
+.pending-block {
+	max-height: 276px;
+	overflow-y: scroll;
+}
+
+.pending-label, .current-label {
+	display: block;
+	font-weight: 600;
+}
+
+.pending-area, .current-trans-area {
+	border: 1px solid #e8e8e8;
+	display: block;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.queue-number {
+	font-weight: 500;
+	font-size: 40px;
+}
+
+.queue-number span {
+	text-align: center;
+	display: block;
+	font-size: 12px;
 }

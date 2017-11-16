@@ -6,6 +6,6 @@
 		        Welcome to UServe Dashboard.
 		    </div>
 	    </div>
-	</div>	
+	</div>
 
 </div>

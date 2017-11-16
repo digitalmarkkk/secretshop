@@ -20,7 +20,7 @@
 
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="apple-mobile-web-app-title" content="PYAO">
+	<meta name="apple-mobile-web-app-title" content="UServe">
 
 	<meta name="theme-color" content="#4C7FF0">
 
@@ -37,7 +37,7 @@
 		<?php endforeach; ?>
 
 	<?php endif; ?>
-	<link rel="stylesheet" href="<?php echo assets_url(); ?>css/admin/app.css" id="load_styles_before"/>
+	<link rel="stylesheet" href="<?php echo assets_url(); ?>css/admin/app.css?<?php echo rand('200', '20000'); ?>" id="load_styles_before"/>
 	<link rel="stylesheet" href="<?php echo assets_url(); ?>css/admin/app.skins.css"/>
 	
 </head>
