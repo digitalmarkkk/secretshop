@@ -8,7 +8,7 @@ class Transaction_model extends CI_Model {
 		}else{
 			$mac = 'xxxxxxxxxxxxxxxxx';
 			$this->db->where('mac_address', $mac);
-		} 
+		}
 
 		$query = $this->db->get('table_transaction_pending');
 		return $query->result_array();

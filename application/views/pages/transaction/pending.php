@@ -4,11 +4,12 @@
 	    <div class="col-sm-12 col-md-12 col-lg-12">
 	    
 	    <div class="card card-block">
-	    	<!-- <?php if(count($pending_transaction) > 0): ?> -->
-		    	<?php foreach ($pending_transaction as $key => $value): ?>
-		    		<?php print_r($value['content']); ?>
-		    	<?php endforeach; ?>
-		    <!-- <?php endif; ?> -->
+	    	<div id="transaction-data">
+	    	</div>
+	    	<!-- <?php foreach ($pending_transaction as $key => $value): ?>
+	    		<?php print_r($value['content']); ?>
+	    	<?php endforeach; ?> -->
+	    	<button class="btn btn-primary" id="show">Show Cutomers</button>
 	    </div>
 		    <div class="card card-block">
 		        <div class="current-label m-b-xs b-b p-b-xs">
@@ -112,123 +113,22 @@
 	    					</div>
 	    				</div>
 	    			</div>
-	    			<div class="col-sm-2 col-md-2 col-lg-2">
-	    				<div class="pending-area m-b-1">
-	    					<div class="tcolor1 queue-number text-align-center m-b-1">
-	    						3
-	    						<span class="view-details">(<a href="#">view details</a>)</span>
-	    					</div>
-	    					<div class="action-area">
-	    						<button class="btn btn-block btn-sm btn-primary m-b-xs" type="button">
-	    							accept
-	    						</button>
-	    						<button class="btn btn-block btn-sm m-b-xs btn-secondary" type="button">
-	    							reject
-	    						</button>
-	    						<button class="btn btn-block btn-sm btn-default" type="button">
-	    							block
-	    						</button>
-	    					</div>
-	    				</div>
-	    			</div>
-	    			<div class="col-sm-2 col-md-2 col-lg-2">
-	    				<div class="pending-area m-b-1">
-	    					<div class="tcolor1 queue-number text-align-center m-b-1">
-	    						4
-	    						<span class="view-details">(<a href="#">view details</a>)</span>
-	    					</div>
-	    					<div class="action-area">
-	    						<button class="btn btn-block btn-sm btn-primary m-b-xs" type="button">
-	    							accept
-	    						</button>
-	    						<button class="btn btn-block btn-sm m-b-xs btn-secondary" type="button">
-	    							reject
-	    						</button>
-	    						<button class="btn btn-block btn-sm btn-default" type="button">
-	    							block
-	    						</button>
-	    					</div>
-	    				</div>
-	    			</div>
-	    			<div class="col-sm-2 col-md-2 col-lg-2">
-	    				<div class="pending-area m-b-1">
-	    					<div class="tcolor1 queue-number text-align-center m-b-1">
-	    						5
-	    						<span class="view-details">(<a href="#">view details</a>)</span>
-	    					</div>
-	    					<div class="action-area">
-	    						<button class="btn btn-block btn-sm btn-primary m-b-xs" type="button">
-	    							accept
-	    						</button>
-	    						<button class="btn btn-block btn-sm m-b-xs btn-secondary" type="button">
-	    							reject
-	    						</button>
-	    						<button class="btn btn-block btn-sm btn-default" type="button">
-	    							block
-	    						</button>
-	    					</div>
-	    				</div>
-	    			</div>
-	    			<div class="col-sm-2 col-md-2 col-lg-2">
-	    				<div class="pending-area m-b-1">
-	    					<div class="tcolor1 queue-number text-align-center m-b-1">
-	    						6
-	    						<span class="view-details">(<a href="#">view details</a>)</span>
-	    					</div>
-	    					<div class="action-area">
-	    						<button class="btn btn-block btn-sm btn-primary m-b-xs" type="button">
-	    							accept
-	    						</button>
-	    						<button class="btn btn-block btn-sm m-b-xs btn-secondary" type="button">
-	    							reject
-	    						</button>
-	    						<button class="btn btn-block btn-sm btn-default" type="button">
-	    							block
-	    						</button>
-	    					</div>
-	    				</div>
-	    			</div>
-	    			<div class="col-sm-2 col-md-2 col-lg-2">
-	    				<div class="pending-area m-b-1">
-	    					<div class="tcolor1 queue-number text-align-center m-b-1">
-	    						7
-	    						<span class="view-details">(<a href="#">view details</a>)</span>
-	    					</div>
-	    					<div class="action-area">
-	    						<button class="btn btn-block btn-sm btn-primary m-b-xs" type="button">
-	    							accept
-	    						</button>
-	    						<button class="btn btn-block btn-sm m-b-xs btn-secondary" type="button">
-	    							reject
-	    						</button>
-	    						<button class="btn btn-block btn-sm btn-default" type="button">
-	    							block
-	    						</button>
-	    					</div>
-	    				</div>
-	    			</div>
-	    			<div class="col-sm-2 col-md-2 col-lg-2">
-	    				<div class="pending-area m-b-1">
-	    					<div class="tcolor1 queue-number text-align-center m-b-1">
-	    						8
-	    						<span class="view-details">(<a href="#">view details</a>)</span>
-	    					</div>
-	    					<div class="action-area">
-	    						<button class="btn btn-block btn-sm btn-primary m-b-xs" type="button">
-	    							accept
-	    						</button>
-	    						<button class="btn btn-block btn-sm m-b-xs btn-secondary" type="button">
-	    							reject
-	    						</button>
-	    						<button class="btn btn-block btn-sm btn-default" type="button">
-	    							block
-	    						</button>
-	    					</div>
-	    				</div>
-	    			</div>
 	    		</div>
 		    </div>
 	    </div>
 	</div>	
 
 </div>
+
+
+<script type="text/javascript">
+$("#transaction-data").click(function() {
+    $.ajax({
+        type: "POST",
+        url: "<?php echo site_url('account/get_pending_data'); ?>",
+        success: function(data) {
+            $("#transaction-data").html(data);
+        }
+    });
+});
+</script>

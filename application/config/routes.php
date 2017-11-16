@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'main';
 $route['account/dashboard'] = "account";
-$route['account/transactions/pending'] = "account/transaction_pending";
+$route['account/transactions/pending'] = "account/get_pending_data";
 
 $route['account'] = "errors/page_missing";
 $route['account/cnyf'] = "404";
